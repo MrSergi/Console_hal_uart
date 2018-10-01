@@ -212,7 +212,6 @@ static void MX_GPIO_Init(void)
   */
 void Error_Handler(void)
 {
-  /* USER CODE BEGIN Error_Handler */
   static uint32_t delay = 0;
   /* User can add his own implementation to report the HAL error return state */
   while(1) 
@@ -222,7 +221,6 @@ void Error_Handler(void)
 
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
   }
-  /* USER CODE END Error_Handler */ 
 }
 
 /*************************************************************
